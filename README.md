@@ -6,11 +6,11 @@ react-hashchange
 ## Install
 
 ```sh
-$ yarn add react-combokeys
+$ yarn add react-hashchange
 # npm v5+
-$ npm install react-combokeys
+$ npm install react-hashchange
 # before npm v5
-$ npm install --save react-combokeys
+$ npm install --save react-hashchange
 ```
 
 ## Usage
