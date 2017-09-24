@@ -48,7 +48,6 @@ ReactDOM.render(
     />,
     mountNode
 );
-
 ```
 
 
@@ -79,6 +78,41 @@ If `render` function is given, it has precedence over any given child component:
 </HashChange>
 ```
 
+### Function as child component (optional)
+
+Same as `render` prop function (see above).
+
+If `render` function is not given, then the child component will be invoked as a function.
+
+The child component function is invoked with an object argument: `({ hash })`.
+
+```js
+<HashChange>
+    {({ hash }) => {
+        return <div>{`hash: ${hash}`}</div>;
+    }}
+</HashChange>
+````
+
+### `onChange` (optional)
+
+An optional function that is called whenever the browser's hash (i.e. `window.location.hash`) changes.
+
+The `onChange` function is invoked with an object argument: `({ hash })`.
+
+### `getLocationHash` (optional)
+
+An optional function that returns the browser's hash. This function is called whenever `hashchange` event occurs.
+
+If necessary, you may provide your own implementation of `getLocationHash` (e.g. handling browser nuances).
+
+By default the implementation of `getLocationHash` is:
+
+```js
+const getLocationHash = () => {
+    return window.location.hash;
+};
+```
 
 License
 =======
