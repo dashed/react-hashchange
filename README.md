@@ -1,7 +1,7 @@
 react-hashchange
 ================
 
-> React component that notifies when browser's hash changes.
+> React component that notifies when browser's hash (i.e. `window.location.hash`) changes.
 
 ## Install
 
