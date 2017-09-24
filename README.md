@@ -51,6 +51,35 @@ ReactDOM.render(
 
 ```
 
+
+## Props
+
+### `render` (optional)
+
+An optional function that is called whenever the browser's hash (i.e. `window.location.hash`) changes.
+
+The `render` function is invoked with an object argument: `({ hash })`.
+
+ It's expected that `render` function returns a single React element.
+This has same API semantics as [`React.Component.render()`](https://facebook.github.io/react/docs/react-component.html#render).
+
+If `render` function is given, it has precedence over any given child component:
+
+```js
+<HashChange
+    render={() => {
+        return (
+            <div>"I take precedence over any function as child component."</div>
+        );
+    }}
+>
+    {() => {
+        return <div>"I will not render."</div>;
+    }}
+</HashChange>
+```
+
+
 License
 =======
 
