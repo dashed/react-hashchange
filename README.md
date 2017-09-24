@@ -1,4 +1,4 @@
-react-hashchange
+react-hashchange [![Build Status](https://travis-ci.org/dashed/react-hashchange.svg)](https://travis-ci.org/dashed/react-hashchange) [![npm version](https://img.shields.io/npm/v/react-hashchange.svg?style=flat)](https://www.npmjs.com/package/react-hashchange)
 ================
 
 > React component that notifies when browser's hash (i.e. `window.location.hash`) changes.
