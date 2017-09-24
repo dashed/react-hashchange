@@ -55,6 +55,8 @@ ReactDOM.render(
 
 ### `render` (optional)
 
+This is a `render` prop. To learn what that is, read: https://cdb.reacttraining.com/use-a-render-prop-50de598f11ce
+
 An optional function that is called whenever the browser's hash (i.e. `window.location.hash`) changes.
 
 The `render` function is invoked with an object argument: `({ hash })`.
