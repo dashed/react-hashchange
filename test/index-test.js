@@ -53,12 +53,14 @@ describe("render prop", () => {
         changeHash("foobar");
 
         let calls = 0;
+        // eslint-disable-next-line
         const displayHash2 = ({ hash }) => {
             calls++;
             const text = `hash2: ${hash}`;
             return <div>{text}</div>;
         };
 
+        // eslint-disable-next-line
         const displayHash3 = ({ hash }) => {
             calls++;
             const text = `hash3: ${hash}`;
@@ -179,6 +181,7 @@ describe("getLocationHash", () => {
             return `getLocationHash: ${window.location.hash}`;
         };
 
+        // eslint-disable-next-line
         const displayHash2 = ({ hash }) => {
             const text = `hash2: ${hash}`;
             return <div>{text}</div>;
@@ -222,6 +225,7 @@ describe("getLocationHash", () => {
             return `getLocationHash: ${window.location.hash}`;
         };
 
+        // eslint-disable-next-line
         const displayHash2 = ({ hash }) => {
             const text = `hash2: ${hash}`;
             return <div>{text}</div>;
