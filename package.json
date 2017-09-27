@@ -58,7 +58,7 @@
     "nwb": "^0.18.10",
     "prettier": "^1.7.0",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^16.0.0"
   },
   "dependencies": {
     "prop-types": "^15.5.10"
