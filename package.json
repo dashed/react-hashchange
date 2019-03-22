@@ -57,7 +57,7 @@
     "eslint-plugin-react": "^7.3.0",
     "nwb": "^0.21.1",
     "prettier": "^1.7.0",
-    "react": "^16.0.0",
+    "react": "^16.8.5",
     "react-dom": "^16.0.0"
   },
   "dependencies": {
